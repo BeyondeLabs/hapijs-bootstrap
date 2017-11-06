@@ -1,0 +1,37 @@
+{
+  "name": "hapijs-bootstrap",
+  "version": "1.0.0",
+  "description": "Sample API Bootstrap",
+  "main": "server.js",
+  "repository": "https://github.com/BeyondeLabs/hapijs-bootstrap.git",
+  "author": "Beyonde Labs <code@beyon.de>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.1.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "test": "lab test --leaks -c -r lcov -o coverage/lcov.info -r console -o stdout",
+    "test:dev": "NODE_ENV=test lab test --leaks"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.6.3",
+    "gulp-watch": "^4.3.11",
+    "lab": "14.2.0"
+  },
+  "dependencies": {
+    "boom": "~5.2.0",
+    "dotenv": "^4.0.0",
+    "good": "^7.3.0",
+    "good-console": "^6.4.0",
+    "hapi": "^16.6.2",
+    "joi": "~10.6.0",
+    "jsonwebtoken": "^8.1.0",
+    "knex": "^0.13.0",
+    "lodash": "^4.17.4",
+    "md5": "^2.2.1",
+    "mysql": "^2.15.0"
+  }
+}
